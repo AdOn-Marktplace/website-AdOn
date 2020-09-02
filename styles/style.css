@@ -1,0 +1,36 @@
+body, ul, li
+{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1rem;
+    text-decoration: none;
+    
+}
+
+*
+{
+  font-family: 'Open Sans', sans-serif;
+}
+
+header img
+{
+   width: 130px;
+   height: 150px; 
+}
+
+.header
+{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.menu
+{
+    display: flex;
+    justify-content: space-between;
+}
