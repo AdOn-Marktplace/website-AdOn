@@ -13,24 +13,53 @@ body, ul, li
   font-family: 'Open Sans', sans-serif;
 }
 
+.hero-intro
+{
+  background-image: url("../static/img/fundo.jpg");
+  background-color: #cccccc;
+  width: 100%;
+  height: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
 header img
 {
    width: 130px;
-   height: 150px; 
+   height: 150px;
+   padding: 0 8rem 0 8rem;
 }
 
 .header
 {
-    position: fixed;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 1);
+    justify-content: space-between;
+ 
 }
 
-.menu
+.menu 
 {
     display: flex;
-    justify-content: space-between;
+    padding: 0 49em 0 0;
+}
+
+.menu li
+{
+    padding: 0 3rem 0 3rem;
+}
+
+.menu li a
+{
+    color: #6d6d6d;
+    transition: ease-in 0.2s;
+}
+
+.menu li a:hover
+{
+    cursor: pointer;
+    color: #50b4f2;
 }
