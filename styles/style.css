@@ -1,3 +1,7 @@
+body{
+    background-color: var(--primary-white);
+}
+
 body, ul, li
 {
     max-width: 100%;
@@ -7,13 +11,18 @@ body, ul, li
     list-style: none;
     font-size: 1rem;
     text-decoration: none;
+    overflow-x: hidden;
     
 }
 
 :root{
-    --text-color: #6d6d6d;
+    --text-color: #737373;
     --primary-color: #50b4f2;
     --body-background: #cccccc;
+    --footer-background: #c2c1c1;
+    --primary-white: #fff;
+    --primary-black: #000;
+    --link-background: #a5a5a5;
 }
 
 *
@@ -23,8 +32,7 @@ body, ul, li
 
 .hero-intro
 {
-  background-image: url("../static/img/fundo.jpg");
-  background-color: var(--body-background);
+  background-image: url("../static/img/fundo.png");
   width: 100%;
   height: 700px;
   background-position: center;
@@ -52,17 +60,18 @@ header img
 .menu 
 {
     display: flex;
-    padding: 0 32em 0 0;
+    padding: 0 5rem 0; 
+    
 }
 
 .menu li
 {
-    padding: 0 3rem 0 3rem;
+    padding: 0 2rem 0;
 }
 
 .menu li a
 {
-    color: var(--text-color);
+    color: var(--primary-white);
     transition: ease-in 0.2s;
 }
 
@@ -70,8 +79,37 @@ header img
 {
     cursor: pointer;
     color: var(--primary-color);
+    box-shadow: 0 5px;
+}
+
+.component{
+    max-width: 100%;
+    height: 35rem;
+}
+
+.text-left{
+    position: absolute;
+    max-width: 35rem;
+    top: 10rem;
+    left: 9.8rem;
+    color: var(--text-color);
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 100%;
+    padding: 10rem 10rem ;
+    
 }
 
 .footer-area{
-    
+    position: absolute;
+    background-color: var(--footer-background);
+    border-top-style: solid;
+    border-top-color: var(--primary-color);
+    height: 12rem;
+    width: 100%;
+    z-index: 1;
 }
