@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/carousel.css">
+    <link rel="stylesheet" href="./public/css/syle.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Ad On</title>
 </head>
 
 <body>
-    <div class="hero-intro">
+    <main>
         <!--Menu AdOn-->
-        <header  class="header">
+        <header  class=".show-on-scroll">
 
-            <img src="./static/img/logo.png" alt="logo">
+            <img src="./public/img/logo.png" alt="logo">
 
             <nav class="menu-align">
                 <ul class="menu">
@@ -25,48 +25,50 @@
             </nav>
         </header>
 
+
         <!--Introdução-->
-        <section class="component no-line">
-            <div class="text-left">
-                <h2>Title Left</h2>
-                <h3>Bla bla bla bla bla bla bal bla balba blab al bla bla bla bla bla b alb alb la bla bla bla bla bla </h3>
-            </div>
-        </section>
-    </div>
-
-    <main>
-        <section class="component with-line">
-            <div class="content">
-                <div>
-                    <lottie-player src="./static/json/camera.json"  background="transparent"  speed="0.5"  style="width: 300px; height: 300px;"  loop autoplay></lottie-player>
-                    <div class="content-title">
-                    <h2 class="content-title-grey">Edição de <h2 class="content-title-blue"> Imagem</h2></h2>
-                    </div>
+        <main  class="presentation">
+       
+            <section class="introduction">
+                <div class="intro-text">
+                    <h1>Title Left</h1>
+                    <p>Fugiat tempor mollit deserunt et aute velit laborum deserunt nostrud laboris ut sit labore sint.</p>
                 </div>
-                <div>
-                    <lottie-player src="./static/json/video.json"  background="transparent"  speed="0.5"  style="width: 300px; height: 300px;"  loop autoplay></lottie-player>
-                    <div class="content-title">
-                        <h2 class="content-title-grey">Edição de <h2 class="content-title-blue"> Vídeo</h2></h2>
-                    </div>
+
+                <div class="button">
+                    <button class="press-button">Veja mais</button>
                 </div>
-                <div>
-                    <lottie-player src="./static/json/store.json"  background="transparent"  speed="0.5"  style="width: 300px; height: 300px;"  loop autoplay></lottie-player>
-                    <div class="content-title">
-                        <h2 class="content-title-grey">Marketing <h2 class="content-title-blue"> Digital</h2></h2>
-                    </div>
+            </section>
+
+            <img class="image-background"
+                 src="./public/img/fundo.png"
+                 alt="">
+
+        </main>
+      
+    <main >
+        <section class="container">
+            <div class="cards">
+
+                <div class="card">
+                    <img src="./public/svg/Designer.svg" alt="">
+                    <h3 class="content-title-grey">Edição de <h2 class="content-title-blue"> Imagem</h2></h3>
                 </div>
-            </div>
+
+                <div class="card">
+                    <img src="./public/svg/videographer.svg" alt="">
+                    <h3 class="content-title-grey">Edição de <h2 class="content-title-blue"> Imagem</h2></h3>
+                </div>
+
+                <div class="card">
+                    <img src="./public/svg/data.svg" alt="">
+                    <h3 class="content-title-grey">Edição de <h2 class="content-title-blue"> Imagem</h2></h3>
+                </div>
+                
         </section>
 
-        <section class="component with-line">
-            <div class="slider">
-              
-            </div>
-        </section>
-
-        <section class="modal">
-            
-        </section>
+    </main>
+    
     </main>
 
     <!--Contato-->
@@ -77,6 +79,5 @@
 </body>
 
 <script src="./js/show-on-scroll.js" ></script>
-<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
 </html>
