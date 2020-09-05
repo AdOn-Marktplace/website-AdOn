@@ -1,4 +1,3 @@
-// The debounce function receives our function as a parameter
 const debounce = (fn) => {
 
   // This holds the requestAnimationFrame reference, so we can cancel it if we wish

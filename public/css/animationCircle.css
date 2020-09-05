@@ -1,0 +1,56 @@
+
+*:not(.circle)
+{
+  filter: blur(0px);
+
+  animation: ease-in-out blurTransition 0.9s;
+}
+
+@keyframes blurTransition
+{
+  from
+  {
+    filter: blur(07px)
+  }
+
+  to
+  {
+    filter: blur(0px)
+  }
+}
+
+
+
+/* GEOMETRIC CIRCLE */
+
+
+.circle { 
+    width: 220px;
+    height: 220px; 
+    -moz-border-radius: 100%; 
+    -webkit-border-radius: 100%; 
+    border-radius: 100%;
+    position: absolute;
+    z-index: 2;
+    top: 5%;
+    right: 7.5%;
+    background: #fff;
+    box-shadow: .4em 0 0 rgba(0, 0, 0, .2);
+
+    animation: ease-in-out transitionCircle 0.9s;
+  }
+
+
+  @keyframes transitionCircle
+  {
+      from{
+          background: #50b4f2;
+          top: 50%
+      }
+
+      to
+      {
+          top: 5%;
+          background: #fff;
+      }
+  }

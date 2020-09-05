@@ -19,51 +19,62 @@ body, ul, li {
   --body-background: #cccccc;
   --footer-background: #c2c1c1;
   --primary-white: #fff;
-  --primary-black: #000;
+  --primary-black: rgb(36, 36, 36);
   --link-background: #a5a5a5;
   --linear-gradient: (#eb1d1d, #fff);
 }
 
 * {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 header img {
-  width: 130px;
-  height: 150px;
+  width: 06%;
+  height: 06%;
   padding: 0 8rem 0 8rem;
 }
 
 header {
   width: 100%;
+  max-height: 80px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  position: fixed;
+  position: block;
 }
 
 .image-background
 {
   position: absolute;
   top: 0%;
-  right: 0%;
+  right: 5%;
   z-index: -1;
   height: 100%;
 }
 
-.menu-align {
-  width: 80%;
-  min-height: 10vh;
-  margin: auto;
-  display: flex;
-  padding: 3rem 0rem;
-  justify-content: space-between;
-  align-items: center;
+*:not(.circle)
+{
+  filter: blur(0px);
+
+  animation: ease-in-out blurTransition 0.9s;
 }
+
+@keyframes blurTransition
+{
+  from
+  {
+    filter: blur(07px)
+  }
+
+  to
+  {
+    filter: blur(0px)
+  }
+}
+
+
 
 .menu {
   display: flex;
-  flex: 1;
 }
 
 .menu li {
@@ -99,7 +110,7 @@ header {
 .intro-text h1
 {
   font-size: 44px;
-  font-weight: 500;
+  font-weight: 700;
   background: linear-gradient(to right, var(--primary-color), var(--primary-white));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -109,7 +120,7 @@ header {
 {
   margin-top: 5px;
   font-size: 22px;
-  color: var(--text-color);
+  color: var(--primary-black);
   max-width: 50%;
 }
 
@@ -120,11 +131,12 @@ header {
 
 .press-button
 {
+  font-size: 16px;
   border: 2px solid var(--primary-color);
   background: transparent;
   color: var(--primary-color);
-  width: 150px;
-  height: 50px;
+  width: 160px;
+  height: 60px;
   border-radius: 6px;
   cursor: pointer;
   outline: none;
@@ -138,19 +150,6 @@ header {
 
   transition: 0.3s;
   
-}
-
-.component {
-  max-width: 100%;
-  height: 35rem;
-}
-
-.text-left {
-  position: absolute;
-  max-width: 35rem;
-  top: 10rem;
-  left: 9.8rem;
-  color: var(--text-color);
 }
 
 .container {
@@ -180,37 +179,6 @@ header {
   min-height: 70%;
 }
 
-.with-line {
-  border-top-style: solid;
-  border-top-color: var(--primary-color);
-}
-
-.content-title {
-  display: block;
-  align-self: center;
-  padding: 0.8rem 0 0.8rem 3rem;
-}
-
-.content-title-grey {
-  display: inline;
-  align-self: center;
-  color: var(--text-color);
-}
-
-.content-title-blue {
-  display: inline;
-  align-self: center;
-  color: var(--primary-color);
-}
-
-.footer-area {
-  position: absolute;
-  background-color: var(--footer-background);
-  height: 12rem;
-  width: 100%;
-  z-index: 1;
-}
-
 /* SVG's */
 .background-svg {
   position: absolute;
@@ -222,14 +190,8 @@ header {
 
 /*# sourceMappingURL=syle.css.map */
 
-html:not([data-scroll='0']) {
-	
-	
-	header {
-		position: fixed;
-		top: 0;
-		background-color: #fff;
-		box-shadow: 0 0 .5em rgba(0, 0, 0, .5);
-	}
-	
+#menu.nav{
+  background: black;
 }
+
+/* GEOMETRIC CIRCLE */
