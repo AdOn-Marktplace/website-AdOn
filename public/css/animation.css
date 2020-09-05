@@ -1,9 +1,9 @@
 
-*:not(.circle)
+.image-background
 {
   filter: blur(0px);
 
-  animation: ease-in-out blurTransition 0.9s;
+  animation: ease-in-out blurTransition 0.7s;
 }
 
 @keyframes blurTransition
@@ -25,17 +25,17 @@
 
 
 .circle { 
-    width: 220px;
-    height: 220px; 
+    width: 250px;
+    height: 250px; 
     -moz-border-radius: 100%; 
     -webkit-border-radius: 100%; 
     border-radius: 100%;
     position: absolute;
     z-index: 2;
-    top: 5%;
-    right: 7.5%;
+    top: 12%;
+    right: 7.6%;
     background: #fff;
-    box-shadow: .4em 0 0 rgba(0, 0, 0, .2);
+    box-shadow: .4em 0 4em rgba(0, 0, 0, .2);
 
     animation: ease-in-out transitionCircle 0.9s;
   }
@@ -50,7 +50,7 @@
 
       to
       {
-          top: 5%;
+          top: 12%;
           background: #fff;
       }
   }

@@ -31,7 +31,7 @@ body, ul, li {
 header img {
   width: 06%;
   height: 06%;
-  padding: 0 8rem 0 8rem;
+  padding: 0 15rem 0 0;
 }
 
 header {
@@ -39,37 +39,20 @@ header {
   max-height: 80px;
   display: flex;
   align-items: center;
-  position: block;
+  justify-content: center;
 }
 
 .image-background
 {
   position: absolute;
-  top: 0%;
-  right: 5%;
+  top: 08%;
+  right: 6%;
   z-index: -1;
-  height: 100%;
+  height: 85%;
+  
 }
 
-*:not(.circle)
-{
-  filter: blur(0px);
 
-  animation: ease-in-out blurTransition 0.9s;
-}
-
-@keyframes blurTransition
-{
-  from
-  {
-    filter: blur(07px)
-  }
-
-  to
-  {
-    filter: blur(0px)
-  }
-}
 
 
 
@@ -157,13 +140,18 @@ header {
   flex-direction: column;
   justify-content: space-around;
   width: 100%;
-  min-height: 120vh;
+  min-height: 90vh;
 
 }
 .container .cards {
+  width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: 1rem 1em 4rem rgba(0, 0, 0, .2);
+  padding: 2rem;
 }
 .container .cards .card {
   display: flex;
@@ -173,11 +161,26 @@ header {
   align-items: center;
 }
 
+.container .cards .card p
+{
+  text-align: justify;
+  text-indent: 08%;
+  line-height: 25px;
+}
+
 .container .cards .card img
 {
-  width: 70%;
-  min-height: 70%;
+  width: 250px;
+  height: 250px;
 }
+
+.content-title-blue
+{
+  color: var(--primary-color);
+  margin: 0;
+  padding: 0;
+}
+
 
 /* SVG's */
 .background-svg {
