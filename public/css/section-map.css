@@ -1,0 +1,38 @@
+:root {
+    --text-color: #4e5666;
+    --primary-color: #50b4f2;
+    --body-background: #cccccc;
+    --footer-background: #c2c1c1;
+    --primary-white: #fff;
+    --primary-black: #4e5666;
+    --link-background: #a5a5a5;
+    --linear-gradient: (#eb1d1d, #fff);
+  }
+  
+
+.section-adress
+{
+    margin-top: 6rem;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.section-adress h1
+{
+    font-size: 42px;
+    
+}
+
+.adress
+{ 
+    margin: auto;
+    color: var(--text-color);
+}
+
+.map
+{
+    margin: auto;
+}

@@ -14,12 +14,12 @@ body, ul, li {
 }
 
 :root {
-  --text-color: #737373;
+  --text-color: #4e5666;
   --primary-color: #50b4f2;
   --body-background: #cccccc;
   --footer-background: #c2c1c1;
   --primary-white: #fff;
-  --primary-black: rgb(36, 36, 36);
+  --primary-black: #4e5666;
   --link-background: #a5a5a5;
   --linear-gradient: (#eb1d1d, #fff);
 }
@@ -28,7 +28,7 @@ body, ul, li {
   font-family: "Roboto", sans-serif;
 }
 
-header img {
+.logo{
   width: 06%;
   height: 06%;
   padding: 0 15rem 0 0;
@@ -48,8 +48,7 @@ header {
   top: 08%;
   right: 6%;
   z-index: -1;
-  height: 85%;
-  
+  height: 85%; 
 }
 
 
@@ -82,12 +81,12 @@ header {
   align-items: center;
   margin: auto;
   min-height: 80vh;
-  align-items: center;
 }
 
 .introduction
 {
   flex: 1;
+  padding: 0 0 0 8rem;
 }
 
 .intro-text h1
@@ -103,7 +102,7 @@ header {
 {
   margin-top: 5px;
   font-size: 22px;
-  color: var(--primary-black);
+  color: var(--text-color);
   max-width: 50%;
 }
 
@@ -116,41 +115,59 @@ header {
 {
   font-size: 16px;
   border: 2px solid var(--primary-color);
-  background: transparent;
-  color: var(--primary-color);
+  background: var(--primary-color);
+  color: var(--primary-white);
   width: 160px;
   height: 60px;
   border-radius: 6px;
   cursor: pointer;
   outline: none;
+  transition: 0.3s
 }
 
 .press-button:hover
 {
   border: 2px solid var(--primary-color);
-  background: var(--primary-color);
-  color: var(--primary-white);
+  background: transparent;
+  color: var(--primary-color);
 
   transition: 0.3s;
   
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
   width: 100%;
-  min-height: 90vh;
-
+  max-height: 90%;
+  margin-top: 30px;
 }
-.container .cards {
+
+.cto-container
+{
   width: 90%;
+  max-height: 90%;
+  text-align: center;
+  box-shadow: 1rem 1em 4rem rgba(0, 0, 0, .2);
+  border-radius: 20px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.cto-container h1
+{
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+
+.container .cards {
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: auto;
-  border-radius: 20px;
-  box-shadow: 1rem 1em 4rem rgba(0, 0, 0, .2);
+  
+  
   padding: 2rem;
 }
 .container .cards .card {
@@ -166,17 +183,25 @@ header {
   text-align: justify;
   text-indent: 08%;
   line-height: 25px;
+  color: var(--text-color);
 }
 
-.container .cards .card img
+.card img
 {
   width: 250px;
   height: 250px;
 }
 
-.content-title-blue
+.card h2
 {
   color: var(--primary-color);
+  margin: 0;
+  padding: 0;
+}
+
+.card h3
+{
+  color: var(--text-color);
   margin: 0;
   padding: 0;
 }
@@ -198,3 +223,19 @@ header {
 }
 
 /* GEOMETRIC CIRCLE */
+
+
+footer
+{
+  max-width: 100%;
+  height: 20vh;
+  background-color: var(--text-color);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+
+  color: var(--primary-white);
+}
