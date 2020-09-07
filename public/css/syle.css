@@ -22,6 +22,7 @@ body, ul, li {
   --primary-black: #4e5666;
   --link-background: #a5a5a5;
   --linear-gradient: (#eb1d1d, #fff);
+  --shadow: rgba(0, 0, 0, .2);
 }
 
 * {
@@ -36,6 +37,7 @@ body, ul, li {
 
 header {
   width: 100%;
+  min-height: 3em;
   max-height: 80px;
   display: flex;
   align-items: center;
@@ -44,11 +46,12 @@ header {
 
 .image-background
 {
+  width: 18.3vw;
+  max-height: 100%;
   position: absolute;
-  top: 08%;
+  top: 8%;
   right: 6%;
   z-index: -1;
-  height: 85%; 
 }
 
 
@@ -146,7 +149,7 @@ header {
   width: 90%;
   max-height: 90%;
   text-align: center;
-  box-shadow: 1rem 1em 4rem rgba(0, 0, 0, .2);
+  box-shadow: 1rem 1em 4rem var(--shadow);
   border-radius: 20px;
   margin: auto;
   padding: 2rem;
