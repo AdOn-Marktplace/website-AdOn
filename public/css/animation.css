@@ -25,15 +25,15 @@
 
 
 .circle { 
-    width: 18.3vw;
-    height: 18.3vw; 
+    width: 13.3vw;
+    height: 13.3vw; 
     -moz-border-radius: 100%; 
     -webkit-border-radius: 100%; 
     border-radius: 100%;
     position: absolute;
     z-index: 2;
-    top: 12%;
-    right: 7.6%;
+    top: 10%;
+    right: 1.4%;
     background: #fff;
     box-shadow: .4em 0 4em rgba(0, 0, 0, .2);
 
@@ -50,7 +50,7 @@
 
       to
       {
-          top: 12%;
+          top: 10%;
           background: #fff;
       }
   }

@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./public/css/syle.css">
+    <link rel="stylesheet" href="./public/css/style.css">
     <link rel="stylesheet" href="./public/css/animation.css">
     <link rel="stylesheet" href="./public/css/section-map.css">
     <link rel="stylesheet" href="./public/css/scroll.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="./public/img/favicon.ico">
    
     <title>Ad On</title>
 </head>
 
 <body>
-    <main>
+    
         <!--Menu AdOn-->
         <header id="menu">
 
@@ -22,41 +23,38 @@
 
             <nav class="menu-align">
                 <ul class="menu">
-                    <li><a>HOME</a></li>
-                    <li><a>PORTIFOLIO</a></li>
-                    <li><a>CONTATO</a></li>
+                    <li><a href="#home" >HOME</a></li>
+                    <li><a href="#sobre">SOBRE</a></li>
+                    <li><a href="#contato">CONTATO</a></li>
                 </ul>
             </nav>
         </header>
 
-
+    <main>
         <!--Introdução-->
-        <main  class="presentation">
+        <div id="home" class="presentation">
        
             <section class="introduction">
                 <div class="intro-text">
-                    <h1>Deixe seu negócio sem fronteiras</h1>
+                    <h1>Deixe seu negócio sem fronteiras
+                        <i class="fa fa-rocket"></i>
+                    </h1> 
                     <p>Fugiat tempor mollit deserunt et aute velit laborum deserunt nostrud laboris ut sit labore sint.</p>
                 </div>
 
                 <div class="button">
                     <button class="press-button">Veja mais</button>
                 </div>
+
+                <div class="circle"></div>
+
             </section>
 
-            <img class="image-background"
-                 src="./public/img/fundo.png"
-                 alt=""
-            >
+            
 
-            <div class="circle"></div>
-
-        </img>
-
-        </main>
+        </div>
       
-    <main >
-        <section class="container">
+        <section  class="container">
 
             <div class="cto-container">
 
@@ -89,7 +87,7 @@
         </section>
 
 
-        <section>
+        <section id="contato" >
             <div class="section-adress show-on-scroll">
                 <div class="adress">
                     <h1>Nossa localização</h1>
@@ -108,25 +106,23 @@
                 </div>
             </div>
         </section>
+    </main>
 
-    </main>
-    
-    </main>
+   
 
     <!--Contato-->
     <footer class="footer-area">
-    <div class="menu">
-        <img class="logo" src="./public/img/logo.png" alt="logo">
+    
+       <a href="#home" ><img class="logo" src="./public/img/logo.png" alt="logo"></a>
+        <div class="sociais">
 
-        <nav class="menu-align">
-            <ul class="menu-footer">
-                <li><a>HOME</a></li>
-                <li><a>PORTIFOLIO</a></li>
-                <li><a>CONTATO</a></li>
-            </ul>
-        </nav>
-    </div>
-        <p>Todos os direitos reservados. 2020 © ADON |  Marketing Digital em Dourados.</p>
+            <a target="_blank" href="https://bit.ly/2YYiLJw"><div class="icons"><i class="fa fa-whatsapp"></i></div></a>
+                
+            <a target="_blank" href="https://www.instagram.com/adon.marketing/"> <div class="icons"><i class="fa fa-instagram"></i></div></a>
+
+            <a target="_blank" href="https://web.facebook.com/adon.marketingdigital"> <div class="icons"><i class="fa fa-facebook"></i></div></a>
+        </div>
+        <p>Todos os direitos reservados. 2020 © <a style="color: #50b4f2;" >ADON</a> |  Marketing Digital em Dourados - MS <i class="fa fa-heart"></i></p>
     </footer>
 </body>
 
