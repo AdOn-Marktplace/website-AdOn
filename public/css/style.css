@@ -228,12 +228,22 @@ header .logo
 
 /* GEOMETRIC CIRCLE */
 
+.contact-link{
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.contact-link:hover{
+  color: var(--primary-color);
+}
 
 .footer-area
 {
   max-width: 100%;
   height: 100%;
   background-color: var(--color-background-black);
+  z-index: 2;
 
   display: flex;
   flex-direction: column;
@@ -294,4 +304,11 @@ header .logo
 {
   background: var(--primary-color);
   transition: ease-in-out 0.3s;
+}
+
+#contato, #sobre{
+  width: 3vw;
+  max-height: 100%;
+  position: relative;
+  top: -6.5vw;
 }
