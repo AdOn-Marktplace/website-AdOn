@@ -297,7 +297,7 @@ header .logo
   background: var(--primary-color);
 }
 
-.overlay h2{
+.pic .overlay h2{
   color: var(--text-color);
   font-size: 20px;
   position: absolute;
@@ -328,6 +328,58 @@ header .logo
   font-size: 32px;
   font-weight: 700;
   color: var(--primary-color);
+}
+
+.video .cards {
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  flex-wrap: wrap;
+  
+  
+  padding: 2rem;
+}
+
+.frame{
+  position: relative;
+  margin: 2rem;
+}
+
+.frame img{
+  width: 380px;
+  height: 280px;
+}
+
+.frame .overlay{
+  position: absolute;
+  top: 0;
+  height: 280px;
+  width: 380px;
+  opacity: 0;
+  transition: .3s ease-in-out;
+  background: var(--primary-white);
+}
+
+.frame .overlay:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+
+.frame .overlay h2{
+  color: var(--primary-color);
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 1;
 }
 
 .title-topic
@@ -457,5 +509,11 @@ header .logo
   top: -6.5vw;
 }
 
+#portifolio{
+  width: 3vw;
+  max-height: 100%;
+  position: relative;
+  top: -3.5vw;
+}
 
 
