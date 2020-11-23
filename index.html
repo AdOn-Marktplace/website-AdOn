@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./public/css/style.css">
     <link rel="stylesheet" href="./public/css/staff.css">
+    <link rel="stylesheet" href="./public/css/lightbox.css">
     <link rel="stylesheet" href="./public/css/animation.css">
     <link rel="stylesheet" href="./public/css/section-map.css">
     <link rel="stylesheet" href="./public/css/scroll.css">
@@ -17,7 +18,8 @@
     <title>Ad On</title>
 </head>
 
-<body class="page-wrapper">
+<body class="page-wrapper" onkeydown="getKeyCodeArt(event); getKeyCodeVideo(event)">
+<div id="blurry">
     
         <!--Header-->
         <header id="menu">
@@ -107,42 +109,42 @@
               <div class="cards">
                 <div class="pic">
                   <img src="./public/img/art_1.jpg"/>
-                  <div class="overlay">
+                  <div class="overlay" onclick="openModalArt(); currentSlideArt(1)">
                     <h2>Imagem 1</h2>
                   </div>
                 </div>
 
                 <div class="pic">
                   <img src="./public/img/art_2.jpg"/>
-                  <div class="overlay">
+                  <div class="overlay" onclick="openModalArt(); currentSlideArt(2)">
                     <h2>Imagem 2</h2>
                   </div>
                 </div>
 
                 <div class="pic">
                   <img src="./public/img/art_3.jpg"/>
-                  <div class="overlay">
+                  <div class="overlay" onclick="openModalArt(); currentSlideArt(3)">
                     <h2>Imagem 3</h2>
                   </div>
                 </div>
 
                 <div class="pic">
                   <img src="./public/img/art_3.jpg"/>
-                  <div class="overlay">
+                  <div class="overlay" onclick="openModalArt(); currentSlideArt(4)">
                     <h2>Imagem 3</h2>
                   </div>
                 </div>
 
                 <div class="pic">
                   <img src="./public/img/art_2.jpg"/>
-                  <div class="overlay">
+                  <div class="overlay" onclick="openModalArt(); currentSlideArt(5)">
                     <h2>Imagem 2</h2>
                   </div>
                 </div>
 
                 <div class="pic">
                   <img src="./public/img/art_1.jpg"/>
-                  <div class="overlay">
+                  <div class="overlay" onclick="openModalArt(); currentSlideArt(6)">
                     <h2>Imagem 1</h2>
                   </div>
                 </div>
@@ -157,7 +159,7 @@
                 
                 <div class="frame">
                   <img src="./public/img/video_1.jpg"/>
-                  <div class="overlay ">
+                  <div class="overlay" onclick="openModalVideo(); currentSlideVideo(1)">
                     <h2>Clique para ver!</h2>
                   </div>
                 </div>
@@ -165,14 +167,14 @@
 
                 <div class="frame">
                   <img src="./public/img/video_2.jpg"/>
-                  <div class="overlay">
+                  <div class="overlay" onclick="openModalVideo(); currentSlideVideo(2)">
                     <h2>Clique para ver!</h2>
                   </div>
                 </div>
 
                 <div class="frame">
                   <img src="./public/img/video_3.jpg"/>
-                  <div class="overlay">
+                  <div class="overlay" onclick="openModalVideo(); currentSlideVideo(3)">
                     <h2>Clique para ver!</h2>
                   </div>
                 </div>
@@ -315,9 +317,102 @@
         </div>
         <p>Todos os direitos reservados. 2020 © <a style="color: #50b4f2;" >ADON</a> |  Marketing Digital em Dourados - MS <i class="fa fa-heart"></i></p>
     </footer>
+</div>
+
+<!--My Modal Art-->
+
+<div id="myModalArt" class="modal">
+    <span class="close cursor" onclick="closeModalArt()">&times;</span>
+    <div class="modal-content">
+
+        <div class="mySlidesArt">
+            <div class="numbertext">1 / 6</div>
+            <img src="./public/img/art_1.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlidesArt">
+            <div class="numbertext">2 / 6</div>
+            <img src="./public/img/art_2.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlidesArt">
+            <div class="numbertext">3 / 6</div>
+            <img src="./public/img/art_3.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlidesArt">
+            <div class="numbertext">4 / 6</div>
+            <img src="./public/img/art_3.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlidesArt">
+            <div class="numbertext">5 / 6</div>
+            <img src="./public/img/art_2.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlidesArt">
+            <div class="numbertext">6 / 6</div>
+            <img src="./public/img/art_1.jpg" style="width:100%">
+          </div>
+
+        <a class="prev" onclick="plusSlidesArt(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlidesArt(1)">&#10095;</a>
+    
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+    
+        
+    </div>
+
+    <div class="close-box" onclick="closeModalArt()"></div>
+</div>
+
+<!-- My Modal Video -->
+
+<div id="myModalVideo" class="modal">
+    <span class="close cursor" onclick="closeModalVideo()">&times;</span>
+    <div class="modal-content">
+
+        <div class="mySlidesVideo videoplayer">
+            <div class="numbertext">1 / 3</div>
+            <iframe id="video" type="text/html" width="100%" height="400"
+            src="http://www.youtube.com/embed/13ZEocfPVUg?controls=2&color=white&iv_load_policy=3"
+            frameborder="0"></iframe>
+          </div>
+
+          <div class="mySlidesVideo">
+            <div class="numbertext">2 / 3</div>
+            <img id="video" src="./public/img/video_2.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlidesVideo">
+            <div class="numbertext">3 / 3</div>
+            <img id="video" src="./public/img/video_3.jpg" style="width:100%">
+          </div>
+
+        <a class="prev" onclick="plusSlidesVideo(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlidesVideo(1)">&#10095;</a>
+    
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+    
+        
+    </div>
+
+    <div class="close-box" onclick="closeModalVideo()"></div>
+</div>
+
+
+
 </body>
+
 
 <script src="./public/js/scroll.js"></script>
 <script src="./public/js/show-on-scroll.js"></script>
+<script src="./public/js/ligthbox.js"></script>
+<script src="./public/js/lightboxVideo.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
 
 </html>
