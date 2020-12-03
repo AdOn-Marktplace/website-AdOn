@@ -1,20 +1,28 @@
-  var src = document.getElementById("video").getAttribute("src");
+  var src = [document.getElementById("fvideo").getAttribute("src"), 
+            document.getElementById("svideo").getAttribute("src")]
 
 
 function openModalVideo() {
-    $('#video').attr('src', src);
 
     document.getElementById("myModalVideo").style.display = "block";
     document.getElementById("blurry").style.filter = "blur(2.5px)";
 }
   
 function closeModalVideo() {
-  $('#video').attr('src', '');
-
+  
   document.getElementById("myModalVideo").style.display = "none";
   document.getElementById("blurry").style.filter = "none";
 
     
+}
+
+function stopVideo(){
+
+  $('#fvideo').attr('src', '');
+  $('#svideo').attr('src', '');
+
+  $('#fvideo').attr('src', src[0]);
+  $('#svideo').attr('src', src[1]);
 }
     
     

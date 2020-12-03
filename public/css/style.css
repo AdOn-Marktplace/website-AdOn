@@ -284,17 +284,17 @@ header .logo
 
 .pic img{
   width: 380px;
-  height: 300px;
 }
 
 .pic .overlay{
   position: absolute;
   top: 0;
-  height: 300px;
+  height: 100%;
   width: 380px;
   opacity: 0;
   transition: .3s ease-in-out;
   background: var(--primary-color);
+  cursor: pointer;
 }
 
 .pic .overlay h2{
@@ -350,13 +350,13 @@ header .logo
 
 .frame img{
   width: 380px;
-  height: 280px;
+  
 }
 
 .frame .overlay{
   position: absolute;
   top: 0;
-  height: 280px;
+  height: 100%;
   width: 380px;
   opacity: 0;
   transition: .3s ease-in-out;
@@ -516,4 +516,52 @@ header .logo
   top: -3.5vw;
 }
 
+/* Ipad Pro dimesions */
 
+@media (max-width: 1024.99px){
+  header .logo{
+    padding: 0 10rem 0 0;
+  }
+
+  .presentation{
+    min-height: 32vh;
+  }
+
+  .container .cards{
+    display: flex;
+  }
+
+  .container .cards .card{
+    width: 280px;
+    margin: 0 2rem
+  }
+
+  .cards .pic,
+  .cards .frame{
+    margin: 0.6rem;
+  }
+
+  .cards .pic img,
+  .cards .pic .overlay,
+  .cards .frame img,
+  .cards .frame .overlay{
+    max-width: 280px;
+  }
+
+  .modal .modal-content{
+    margin: 12rem auto;
+    width: 100%;
+    max-width: 580px;
+  }
+
+  .container .ct-container .row{
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+  }
+
+  .container .ct-container .row .col{
+    padding: 25px 25px 0
+  }
+
+}

@@ -18,6 +18,11 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+.mySlidesVideo{
+  background-color: #000;
+  max-height: 404px;
+}
+
 .close-box{
     display: block;
     position: fixed;
