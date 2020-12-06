@@ -81,6 +81,7 @@
   top: 50%;
   width: auto;
   padding: 16px;
+  z-index: 1000;
   margin-top: -12px;
   color: white;
   font-weight: bold;

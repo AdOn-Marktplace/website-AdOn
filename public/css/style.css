@@ -52,6 +52,10 @@ header .logo
   padding: 0 15rem 0 0;
 }
 
+.dropdown{
+  position: relative;
+  display: none;
+}
 
 .menu {
   display: flex;
@@ -464,6 +468,11 @@ header .logo
   transition: ease-in 0.4s;
 }
 
+.section-adress .map iframe{
+  height: 450px;
+  width: 600px;
+}
+
 .sociais
 {
   display: flex;
@@ -557,11 +566,358 @@ header .logo
   .container .ct-container .row{
     margin: auto;
     justify-content: center;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
   }
 
   .container .ct-container .row .col{
     padding: 25px 25px 0
+  }
+
+  .section-adress .map iframe{
+    height: 350px;
+    width: 500px;
+  }
+}
+
+/* Ipad dimesions */
+
+@media (max-width: 768.99px){
+  header .logo{
+    padding: 0 5rem 0 0;
+  }
+
+  .presentation{
+    min-height: 20vh;
+    background-image: none;
+
+  }
+
+  .presentation .introduction{
+    padding: 0 0 0 2rem;
+  }
+
+  .presentation .intro-text p{
+    max-width: 100%;
+  }
+
+  .presentation .circle{
+    display: none;
+  }
+
+  .cards{
+    flex-direction: column;
+  }
+
+  .container .cards .card p{
+    text-align: center;
+  }
+
+  .ct-container .art,
+  .ct-container .video{
+    padding: 0rem 5rem;
+  }
+
+  .ct-container .art .cards,
+  .ct-container .video .cards{
+    padding: 2rem 0;
+  }
+
+  .section-adress .map iframe{
+    height: 400px;
+    width: 350px;
+  }
+
+  footer .icons{
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+  }
+}
+
+/* Surface Duo Dimensions */
+
+@media (max-width: 540.99px){
+  header .logo{
+    width: 15%;
+    padding: 0 16rem 0 0;
+  }
+
+  header .dropdown{
+    display: inline-block;
+  }
+
+  header .menu-align{
+    display: none;
+  }
+
+  header .menu-dropdown{
+    display: none;
+    position: absolute;
+    min-width: 400px;
+    background-color: #FFF;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin: 10px;
+    padding: 35px 100px;
+    left: -500px;
+    z-index: 1;
+  }
+
+  .menu-dropdown .menu{
+    flex-direction: column;
+  }
+
+  .menu-dropdown .menu li{
+    line-height: 2rem;
+  }
+
+  section.container .cto-container{
+    padding: 2rem 0;
+  }
+
+  .ct-container .art,
+  .ct-container .video{
+    padding: 0 1rem;
+  }
+
+  .cards .pic img,
+  .cards .pic .overlay,
+  .cards .frame img,
+  .cards .frame .overlay{
+    max-width: 200px;
+    height: 200px;
+  }
+
+  .container .ct-container .row .col{
+    width: 150px;
+    padding: 10px 10px 0;
+  }
+
+  .modal .modal-content{
+    margin: 3rem auto;
+    width: 100%;
+    max-width: 580px;
+  }
+
+  section .section-adress{
+    max-width: 410px;
+    flex-direction: column;
+    padding: 0.5rem;
+    box-shadow: none;
+  }
+
+  .section-adress .map iframe{
+    margin-top: 25px;
+    height: 400px;
+    width: 450px;
+  }
+
+  footer .logo{
+    width: 40px;
+  }
+
+  footer .icons{
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+  }
+}
+
+/* Iphone 8 plus or 414 width dimensions */
+
+@media (max-width: 414.99px){
+  header .logo{
+    width: 20%;
+    padding: 0 16rem 0 0;
+  }
+
+  header .dropdown{
+    display: inline-block;
+  }
+
+  header .menu-align{
+    display: none;
+  }
+
+  header .menu-dropdown{
+    display: none;
+    position: absolute;
+    min-width: 375px;
+    background-color: #FFF;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin: 10px;
+    padding: 35px 16px;
+    left: -375px;
+    z-index: 1;
+  }
+
+  .menu-dropdown .menu{
+    flex-direction: column;
+  }
+
+  .menu-dropdown .menu li{
+    line-height: 2rem;
+  }
+
+  section.container .cto-container{
+    padding: 2rem 0;
+  }
+
+  .ct-container .art,
+  .ct-container .video{
+    padding: 0 1rem;
+  }
+
+  .container .ct-container .row .col{
+    width: 150px;
+    padding: 10px 10px 0;
+  }
+
+  .modal .modal-content{
+    margin: 3rem auto;
+    width: 100%;
+    max-width: 580px;
+  }
+
+  section .section-adress{
+    max-width: 410px;
+    flex-direction: column;
+    padding: 0.5rem;
+    box-shadow: none;
+  }
+
+  .section-adress .map iframe{
+    margin-top: 25px;
+    height: 325px;
+    width: 350px;
+  }
+
+  footer .logo{
+    width: 40px;
+  }
+
+  footer .icons{
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+  }
+}
+
+/* Iphone X or 375 width dimesions */
+
+@media (max-width: 375.99px){
+  header .logo{
+    width: 20%;
+    padding: 0 16rem 0 0;
+  }
+
+  header .dropdown{
+    display: inline-block;
+  }
+
+  header .menu-align{
+    display: none;
+  }
+
+  header .menu-dropdown{
+    display: none;
+    position: absolute;
+    min-width: 375px;
+    background-color: #FFF;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin: 10px;
+    padding: 35px 16px;
+    left: -375px;
+    z-index: 1;
+  }
+
+  .menu-dropdown .menu{
+    flex-direction: column;
+  }
+
+  .menu-dropdown .menu li{
+    line-height: 2rem;
+  }
+
+  section.container .cto-container{
+    padding: 2rem 0;
+  }
+
+  .ct-container .art,
+  .ct-container .video{
+    padding: 0 2rem;
+  }
+
+  .container .ct-container .row .col{
+    width: 150px;
+    padding: 10px 10px 0;
+  }
+
+  section .section-adress{
+    max-width: 375px;
+    flex-direction: column;
+    padding: 0.5rem;
+    box-shadow: none;
+  }
+
+  .section-adress .map iframe{
+    margin-top: 25px;
+    height: 325px;
+    width: 280px;
+  }
+
+  footer .logo{
+    width: 40px;
+  }
+
+  footer .icons{
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+  }
+}
+
+/* Iphone 5 or 320 width dimesions */
+
+@media(max-width: 320.99px){
+  header .logo{
+    width: 20%;
+    padding: 0 14rem 0 0;
+  }
+
+  header .menu-dropdown{
+    display: none;
+    position: absolute;
+    min-width: 320px;
+    background-color: #FFF;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin: 5px;
+    padding: 35px 8px;
+    left: -320px;
+    z-index: 1;
+  }
+
+  .presentation .introduction .button{
+    padding: 10px 0 0 0;
+  }
+
+  .ct-container .art,
+  .ct-container .video{
+    padding: 0 0.6rem;
+  }
+
+  .container .ct-container h1{
+    font-size: 28px;
+  }
+
+  .container .ct-container .row .col{
+    width: 140px;
+    padding: 10px 10px 0;
+  }
+
+  .modal .modal-content{
+    margin: 3rem auto;
+    width: 100%;
+    max-width: 580px;
   }
 
 }
