@@ -15,6 +15,7 @@ body, ul, li {
 
 :root {
   --text-color: #4e5666;
+  --link-color: #195274;
   --primary-color: #50b4f2;
   --second-color: #a6ddff;
   --body-background: #cccccc;
@@ -428,7 +429,7 @@ header .logo
 .contact-link{
   cursor: pointer;
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--link-color);
 }
 
 .contact-link:hover{
