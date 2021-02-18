@@ -303,7 +303,7 @@ header .logo
 }
 
 .pic .overlay h2{
-  color: var(--text-color);
+  color: var(--primary-white);
   font-size: 20px;
   position: absolute;
   top: 50%;
